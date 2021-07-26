@@ -1,7 +1,7 @@
 ### Installation
 
-##### Setup file
+##### Makefile
 For install templates, move to  ACTemplates folder and use command: 
 ```sh
-chmod +x ./setup.sh && ./setup.sh
+sudo make setup
 ```
