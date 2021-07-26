@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>ru.appcraft.project.template</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Concrete</key>
+	<true/>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.applicationBase</string>
+		<string>com.apple.dt.unit.iosBase</string>
+	</array>
+	<key>Project</key>
+	<dict>
+		<key>Configurations</key>
+		<dict>
+			<key>Debug</key>
+			<dict>
+				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
+				<string>DEBUG</string>
+			</dict>
+			<key>Release</key>
+			<dict>
+				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
+				<string></string>
+			</dict>
+		</dict>
+		<key>SharedSettings</key>
+		<dict>
+			<key>SWIFT_VERSION</key>
+			<string>5.1</string>
+		</dict>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetIdentifier</key>
+			<string>com.apple.dt.cocoaTouchApplicationTarget</string>
+			<key>BuildPhases</key>
+			<array>
+				<dict>
+					<key>ShellPath</key>
+					<string>/bin/sh</string>
+					<key>Name</key>
+					<string>Swift Lint</string>
+					<key>Class</key>
+					<string>ShellScript</string>
+					<key>ShellScript</key>
+					<string>if which swiftlint &gt;/dev/null; then
+					swiftlint
+					else
+					echo &quot;warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint&quot;
+					fi</string>
+				</dict>
+			</array>
+			<key>SharedSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>Info.plist:iphone</string>
+		<string>../Podfile:swiftbasics</string>
+		<string>../.swiftlint.yml</string>
+		<string>../.gitignore</string>
+		<string>👑 Application Layer/AppConfiguration.swift</string>
+		<string>👑 Application Layer/AppManager.swift</string>
+		<string>👑 Application Layer/AppDefaults.swift</string>
+		<string>👑 Application Layer/AppDelegate.swift</string>
+		<string>👑 Application Layer/Base.lproj/LaunchScreen.storyboard</string>
+		<string>👑 Application Layer/Extensions/.gitkeep</string>
+		<string>👑 Application Layer/Localization/en.lproj/Localizable.strings</string>
+		<string>👑 Application Layer/Localization/ru.lproj/Localizable.strings</string>
+		<string>👑 Application Layer/Localization/AppLocalization.swift</string>
+		<string>👑 Application Layer/Localization/Localizable.swift</string>
+		<string>👑 Application Layer/Localization/AppLocalizationManager.swift</string>
+		<string>👑 Application Layer/Resources/Assets/AppAssets.swift</string>
+		<string>👑 Application Layer/Resources/Assets/Assets.xcassets</string>
+		<string>👑 Application Layer/Resources/Fonts/Fira Sans/FiraSans-ExtraBold.ttf</string>
+		<string>👑 Application Layer/Resources/Fonts/Fira Sans/FiraSans-Regular.ttf</string>
+		<string>👑 Application Layer/Resources/Fonts/Fira Sans/FiraSans-SemiBold.ttf</string>
+		<string>👑 Application Layer/Resources/Fonts/Fira Sans/FiraSans.swift</string>
+		<string>👑 Application Layer/Resources/Theme/AppTheme.swift</string>
+		<string>👑 Application Layer/Resources/Theme/AppThemeManager.swift</string>
+		<string>👑 Application Layer/Resources/Style/Stylable.swift</string>
+		<string>👑 Application Layer/Resources/Style/StyleWrapper.swift</string>
+		<string>👑 Application Layer/ru.lproj/LaunchScreen.strings</string>
+		<string>🧠 Data Layer/Entities/.gitkeep</string>
+		<string>🧠 Data Layer/Repositories/.gitkeep</string>
+		<string>🧠 Data Layer/Responses/.gitkeep</string>
+		<string>🧠 Data Layer/Requests/.gitkeep</string>
+		<string>🧠 Data Layer/___PROJECTNAME___.xcdatamodeld</string>
+		<string>🧠 Data Layer/___PROJECTNAME___Repository.swift</string>
+		<string>🧩 Domain Layer/Enums/.gitkeep</string>
+		<string>🧩 Domain Layer/Models/.gitkeep</string>
+		<string>🧩 Domain Layer/UseCases/.gitkeep</string>
+		<string>🌟 Presentation Layer/Components/Cells/.gitkeep</string>
+		<string>🌟 Presentation Layer/Components/Custom/.gitkeep</string>
+		<string>🌟 Presentation Layer/Navigation/Navigation Controller/BasicNavigationController.swift</string>
+		<string>🌟 Presentation Layer/User Stories/Initial/InitialAssembly.swift</string>
+		<string>🌟 Presentation Layer/User Stories/Initial/InitialPresenter.swift</string>
+		<string>🌟 Presentation Layer/User Stories/Initial/InitialRouter.swift</string>
+		<string>🌟 Presentation Layer/User Stories/Initial/InitialViewController.swift</string>
+		<string>🌟 Presentation Layer/User Stories/Initial/InitialViewController.xib</string>
+		<string>🌟 Presentation Layer/User Stories/Initial/InitialViewModel.swift</string>
+		<string>🤖 Service Layer/.gitkeep</string>
+	</array>
+	<key>Definitions</key>
+	<dict>
+		<key>Info.plist:iphone</key>
+		<string>&lt;key&gt;LSRequiresIPhoneOS&lt;/key&gt;
+	&lt;true/&gt;
+	&lt;key&gt;UILaunchStoryboardName&lt;/key&gt;
+	&lt;string&gt;LaunchScreen&lt;/string&gt;
+	&lt;key&gt;UIRequiredDeviceCapabilities&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;armv7&lt;/string&gt;
+	&lt;/array&gt;
+	&lt;key&gt;UIStatusBarStyle&lt;/key&gt;
+	&lt;string&gt;UIStatusBarStyleLightContent&lt;/string&gt;
+	&lt;key&gt;UISupportedInterfaceOrientations&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;UIInterfaceOrientationPortrait&lt;/string&gt;
+	&lt;/array&gt;
+	&lt;key&gt;UISupportedInterfaceOrientations~ipad&lt;/key&gt;
+	&lt;array&gt;
+		&lt;string&gt;UIInterfaceOrientationPortrait&lt;/string&gt;
+		&lt;string&gt;UIInterfaceOrientationPortraitUpsideDown&lt;/string&gt;
+		&lt;string&gt;UIInterfaceOrientationLandscapeLeft&lt;/string&gt;
+		&lt;string&gt;UIInterfaceOrientationLandscapeRight&lt;/string&gt;
+	&lt;/array&gt;</string>
+		<key>../Podfile:swiftbasics</key>
+		<string># Uncomment the next line to define a global platform for your project
+platform :ios, &apos;10.0&apos;
+
+inhibit_all_warnings!
+
+target &apos;___PACKAGENAME___&apos; do
+  # Comment the next line if you don&apos;t want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ___PACKAGENAME___
+  
+  # Custom libs
+  pod &apos;GKViper&apos;, &apos;~&gt; 1.0.0&apos;
+  pod &apos;GKUseCase&apos;, &apos;~&gt; 1.0.1&apos;
+  pod &apos;GKRepresentable&apos;, &apos;~&gt; 1.0.1&apos;
+
+end
+</string>
+		<key>../.gitignore</key>
+		<dict>
+			<key>Path</key>
+			<string>.gitignore</string>
+		</dict>
+		<key>../.swiftlint.yml</key>
+		<dict>
+			<key>Path</key>
+			<string>.swiftlint.yml</string>
+		</dict>
+		<key>👑 Application Layer/Localization/ru.lproj/Localizable.strings</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Localization</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Localization/ru.lproj/Localizable.strings</string>
+		</dict>
+		<key>👑 Application Layer/Localization/en.lproj/Localizable.strings</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Localization</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Localization/en.lproj/Localizable.strings</string>
+		</dict>
+		<key>👑 Application Layer/Resources/Fonts/Fira Sans/FiraSans-Regular.ttf</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Resources</string>
+				<string>Fonts</string>
+				<string>Fira Sans</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Resources/Fonts/Fira Sans/FiraSans-Regular.ttf</string>
+		</dict>
+		<key>👑 Application Layer/AppDefaults.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/AppDefaults.swift</string>
+		</dict>
+		<key>👑 Application Layer/AppManager.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/AppManager.swift</string>
+		</dict>
+		<key>👑 Application Layer/Resources/Style/StyleWrapper.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Resources</string>
+				<string>Style</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Resources/Style/StyleWrapper.swift</string>
+		</dict>
+		<key>👑 Application Layer/Resources/Assets/Assets.xcassets</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Resources</string>
+				<string>Assets</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Resources/Assets/Assets.xcassets</string>
+		</dict>
+		<key>👑 Application Layer/Extensions/.gitkeep</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Extension</string>
+			</array>
+			<key>Path</key>
+			<string>.gitkeep</string>
+		</dict>
+		<key>👑 Application Layer/Resources/Fonts/Fira Sans/FiraSans-SemiBold.ttf</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Resources</string>
+				<string>Fonts</string>
+				<string>Fira Sans</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Resources/Fonts/Fira Sans/FiraSans-SemiBold.ttf</string>
+		</dict>
+		<key>👑 Application Layer/Resources/Fonts/Fira Sans/FiraSans.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Resources</string>
+				<string>Fonts</string>
+				<string>Fira Sans</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Resources/Fonts/Fira Sans/FiraSans.swift</string>
+		</dict>
+		<key>👑 Application Layer/Resources/Theme/AppTheme.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Resources</string>
+				<string>Theme</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Resources/Theme/AppTheme.swift</string>
+		</dict>
+		<key>👑 Application Layer/AppDelegate.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/AppDelegate.swift</string>
+		</dict>
+		<key>👑 Application Layer/Resources/Theme/AppThemeManager.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Resources</string>
+				<string>Theme</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Resources/Theme/AppThemeManager.swift</string>
+		</dict>
+		<key>👑 Application Layer/Resources/Style/Stylable.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Resources</string>
+				<string>Style</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Resources/Style/Stylable.swift</string>
+		</dict>
+		<key>👑 Application Layer/ru.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>LaunchScreen.storyboard</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/ru.lproj/LaunchScreen.strings</string>
+		</dict>
+		<key>👑 Application Layer/Base.lproj/LaunchScreen.storyboard</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Base.lproj/LaunchScreen.storyboard</string>
+		</dict>
+		<key>👑 Application Layer/Localization/Localizable.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Localization</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Localization/Localizable.swift</string>
+		</dict>
+		<key>👑 Application Layer/Resources/Fonts/Fira Sans/FiraSans-ExtraBold.ttf</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Resources</string>
+				<string>Fonts</string>
+				<string>Fira Sans</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Resources/Fonts/Fira Sans/FiraSans-ExtraBold.ttf</string>
+		</dict>
+		<key>👑 Application Layer/Localization/AppLocalizationManager.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Localization</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Localization/AppLocalizationManager.swift</string>
+		</dict>
+		<key>👑 Application Layer/AppConfiguration.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/AppConfiguration.swift</string>
+		</dict>
+		<key>👑 Application Layer/Resources/Assets/AppAssets.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Resources</string>
+				<string>Assets</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Resources/Assets/AppAssets.swift</string>
+		</dict>
+		<key>👑 Application Layer/Localization/AppLocalization.swift</key>
+		<dict>
+			<key>Group</key>
+			<array>
+				<string>👑 Application Layer</string>
+				<string>Localization</string>
+			</array>
+			<key>Path</key>
+			<string>👑 Application Layer/Localization/AppLocalization.swift</string>
+		</dict>
+		<key>🧠 Data Layer/Entities/.gitkeep</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>Group</key>
+			<array>
+				<string>🧠 Data Layer</string>
+				<string>Entities</string>
+			</array>
+		</dict>
+		<key>🧠 Data Layer/Repositories/.gitkeep</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>Group</key>
+			<array>
+				<string>🧠 Data Layer</string>
+				<string>Repositories</string>
+			</array>
+		</dict>
+		<key>🧠 Data Layer/Responses/.gitkeep</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>Group</key>
+			<array>
+				<string>🧠 Data Layer</string>
+				<string>Responses</string>
+			</array>
+		</dict>
+		<key>🧠 Data Layer/Requests/.gitkeep</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>Group</key>
+			<array>
+				<string>🧠 Data Layer</string>
+				<string>Requests</string>
+			</array>
+		</dict>
+		<key>🧠 Data Layer/___PROJECTNAME___.xcdatamodeld</key>
+		<dict>
+			<key>Path</key>
+			<string>🧠 Data Layer/___PROJECTNAME___.xcdatamodeld</string>
+			<key>Group</key>
+			<array>
+				<string>🧠 Data Layer</string>
+			</array>
+		</dict>
+		<key>🧠 Data Layer/___PROJECTNAME___Repository.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>🧠 Data Layer/___PROJECTNAME___Repository.swift</string>
+			<key>Group</key>
+			<array>
+				<string>🧠 Data Layer</string>
+			</array>
+		</dict>
+		<key>🧩 Domain Layer/Enums/.gitkeep</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>Group</key>
+			<array>
+				<string>🧩 Domain Layer</string>
+				<string>Enums</string>
+			</array>
+		</dict>
+		<key>🧩 Domain Layer/Models/.gitkeep</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>Group</key>
+			<array>
+				<string>🧩 Domain Layer</string>
+				<string>Models</string>
+			</array>
+		</dict>
+		<key>🧩 Domain Layer/UseCases/.gitkeep</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>Group</key>
+			<array>
+				<string>🧩 Domain Layer</string>
+				<string>UseCases</string>
+			</array>
+		</dict>
+		<key>🌟 Presentation Layer/Components/Cells/.gitkeep</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>Group</key>
+			<array>
+				<string>🌟 Presentation Layer</string>
+				<string>Components</string>
+				<string>Cells</string>
+			</array>
+		</dict>
+		<key>🌟 Presentation Layer/Components/Custom/.gitkeep</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>Group</key>
+			<array>
+				<string>🌟 Presentation Layer</string>
+				<string>Components</string>
+				<string>Custom</string>
+			</array>
+		</dict>
+		<key>🌟 Presentation Layer/Navigation/Navigation Controller/BasicNavigationController.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>🌟 Presentation Layer/Navigation/Navigation Controller/BasicNavigationController.swift</string>
+			<key>Group</key>
+			<array>
+				<string>🌟 Presentation Layer</string>
+				<string>Navigation</string>
+				<string>Navigation Controller</string>
+			</array>
+		</dict>
+		<key>🌟 Presentation Layer/User Stories/Initial/InitialAssembly.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>🌟 Presentation Layer/User Stories/Initial/InitialAssembly.swift</string>
+			<key>Group</key>
+			<array>
+				<string>🌟 Presentation Layer</string>
+				<string>User Stories</string>
+				<string>Initial</string>
+			</array>
+		</dict>
+		<key>🌟 Presentation Layer/User Stories/Initial/InitialPresenter.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>🌟 Presentation Layer/User Stories/Initial/InitialPresenter.swift</string>
+			<key>Group</key>
+			<array>
+				<string>🌟 Presentation Layer</string>
+				<string>User Stories</string>
+				<string>Initial</string>
+			</array>
+		</dict>
+		<key>🌟 Presentation Layer/User Stories/Initial/InitialRouter.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>🌟 Presentation Layer/User Stories/Initial/InitialRouter.swift</string>
+			<key>Group</key>
+			<array>
+				<string>🌟 Presentation Layer</string>
+				<string>User Stories</string>
+				<string>Initial</string>
+			</array>
+		</dict>
+		<key>🌟 Presentation Layer/User Stories/Initial/InitialViewController.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>🌟 Presentation Layer/User Stories/Initial/InitialViewController.swift</string>
+			<key>Group</key>
+			<array>
+				<string>🌟 Presentation Layer</string>
+				<string>User Stories</string>
+				<string>Initial</string>
+			</array>
+		</dict>
+		<key>🌟 Presentation Layer/User Stories/Initial/InitialViewController.xib</key>
+		<dict>
+			<key>Path</key>
+			<string>🌟 Presentation Layer/User Stories/Initial/InitialViewController.xib</string>
+			<key>Group</key>
+			<array>
+				<string>🌟 Presentation Layer</string>
+				<string>User Stories</string>
+				<string>Initial</string>
+			</array>
+		</dict>
+		<key>🌟 Presentation Layer/User Stories/Initial/InitialViewModel.swift</key>
+		<dict>
+			<key>Path</key>
+			<string>🌟 Presentation Layer/User Stories/Initial/InitialViewModel.swift</string>
+			<key>Group</key>
+			<array>
+				<string>🌟 Presentation Layer</string>
+				<string>User Stories</string>
+				<string>Initial</string>
+			</array>
+		</dict>
+		<key>🤖 Service Layer/.gitkeep</key>
+		<dict>
+			<key>TargetIndices</key>
+			<array/>
+			<key>Path</key>
+			<string>.gitkeep</string>
+			<key>Group</key>
+			<array>
+				<string>🤖 Service Layer</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>
