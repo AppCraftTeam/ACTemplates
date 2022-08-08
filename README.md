@@ -43,13 +43,13 @@ fi
 5. Build project. Add the generated files to the project.
 
 ### Installation example for `ACLocalizedString`
-1. Project in `finder`:
+1. Project in `finder`:\
 ![](/Images/swiftgen_project_in_finder.png)
 
-2. Project in `xcode`:
+2. Project in `xcode`:\
 ![](/Images/swiftgen_project_name_in_yml.png)
 
-3. `Build Phases`:
+3. `Build Phases`:\
 ![](/Images/swiftgen_build_phases.png)
 
 You can see the full example in the [Demo]()
