@@ -18,7 +18,7 @@ SwiftGen is a tool to automatically generate Swift code for resources of your pr
 
 ### Custom templates
 
-- [x] **swiftgen-aclocalizedstring-template.stencil** - template generating strings for library [ACLocalizedString](https://github.com/AppCraftTeam/appcraft-localized-ios).
+- [x] **swiftgen-aclocalizedstring-template.stencil** - template generating strings for library [ACLocalized](https://github.com/AppCraftTeam/appcraft-localized-ios).
 - [ ] Develop more custom templates 👨‍💻.
 
 ### Install
@@ -42,7 +42,7 @@ fi
 4. In the `$SRCROOT/Swiftgen/swiftgen.yml` file, replace `<PROJECT_FOLDER_NAME>` with the name of your project folder. And change paths to resource files if needed.
 5. Build project. Add the generated files to the project.
 
-### Installation example for `ACLocalizedString`
+### Installation example for `ACLocalized`
 1. Project in `finder`:\
 ![](/Images/swiftgen_project_in_finder.png)
 
@@ -52,7 +52,7 @@ fi
 3. `Build Phases`:\
 ![](/Images/swiftgen_build_phases.png)
 
-You can see the full example in the [ACLocalizedString/Demo](https://github.com/AppCraftTeam/appcraft-localized-ios/tree/master/Demo)
+You can see the full example in the [ACLocalized/Demo](https://github.com/AppCraftTeam/appcraft-localized-ios/tree/master/Demo)
 
 ## License
 Distributed under the MIT License.
