@@ -30,7 +30,7 @@ else
   echo "warning: SwiftGen not installed, install from https://github.com/SwiftGen/SwiftGen"
 fi
 ```
-4. In the `$SRCROOT/Swiftgen/swiftgen.yml` file, replace <PROJECT_FOLDER_NAME> with the name of your project folder. And replace paths for localization files.
+4. In the `$SRCROOT/Swiftgen/swiftgen.yml` file, replace `<PROJECT_FOLDER_NAME>` with the name of your project folder. And replace paths for localization files.
 5. Build project. Add the generated `ACLocalizedString+Generated.swift` file to the project.
 
 ## License
