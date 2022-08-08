@@ -1,5 +1,5 @@
-input_dir: ../ACLocalizedDemo/
-output_dir: ../ACLocalizedDemo/
+input_dir: ../<PROJECT_FOLDER_NAME>/
+output_dir: ../<PROJECT_FOLDER_NAME>/
 strings:
   inputs:
     - ApplicationLayer/Localized/ru.lproj/Localized.strings
