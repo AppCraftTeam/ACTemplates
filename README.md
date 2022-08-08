@@ -52,7 +52,7 @@ fi
 3. `Build Phases`:\
 ![](/Images/swiftgen_build_phases.png)
 
-You can see the full example in the [Demo]()
+You can see the full example in the [ACLocalizedString/Demo](https://github.com/AppCraftTeam/appcraft-localized-ios/tree/master/Demo)
 
 ## License
 Distributed under the MIT License.
