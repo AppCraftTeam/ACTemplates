@@ -7,3 +7,22 @@ strings:
   outputs:
     - templatePath: swiftgen-aclocalizedstring-template.stencil
       output: ApplicationLayer/Localized/ACLocalizedString+Generated.swift
+xcassets:
+  inputs:
+    - ApplicationLayer/Assets/Assets.xcassets
+  outputs:
+    - templatePath: swiftgen-xcassets-template.stencil
+      params:
+        forceProvidesNamespaces: true
+      output: ApplicationLayer/Assets/Assets+Generated.swift
+#
+# Uncomment if fonts are used
+#      
+#fonts:
+#  inputs: ApplicationLayer/Fonts
+#  outputs:
+#    - templateName: swift5
+#      params:
+#          enumName: Fonts
+#          swiftIdentifier: normal
+#      output: ApplicationLayer/Fonts/Fonts+Generated.swift
